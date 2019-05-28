@@ -1,0 +1,8 @@
+{
+  "name": "assets-on-workers",
+  "main": "index.js",
+  "private": true,
+  "description": "Serving assets on workers",
+  "version": "0.1.0",
+  "license": "MIT"
+}
