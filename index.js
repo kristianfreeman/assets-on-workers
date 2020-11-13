@@ -12,7 +12,7 @@ async function serveAsset(event) {
 
   if (!response) {
     response = await fetch(`${BUCKET_URL}${url.pathname}`)
-    response = new Response(response.body, response })
+    response = new Response(response.body, response)
     response.headers.set("Cache-Control", "max-age=14400")
     event.waitUntil(cache.put(event.request, response.clone()))
   }
